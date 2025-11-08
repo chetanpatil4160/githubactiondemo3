@@ -7,4 +7,6 @@ data = response.json()
 
 df = pd.DataFrame(data)
 
+df = df[["id","name"]] # getting only id name from data 
+
 print(df)
