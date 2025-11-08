@@ -22,4 +22,7 @@ jobs:
               run: pip install -r requirements.txt
 
             - name: get data from api
+#under github secrets and variable we hvae create one api_toek secrets that we read it here 
+              env:
+                "api_token": ${{secrets.API_TOKEN}}
               run: python api.py
