@@ -1,7 +1,7 @@
 import requests
 import pandas as pd 
 
-response = requests.get("https://jsonplaceholder.tyicode.com/users")
+response = requests.get("https://jsonplaceholder.typicode.com/users")
 
 data = response.json()
 
